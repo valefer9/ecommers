@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walmart | Halloween HQ</title>
+  <link rel="stylesheet" href="syles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <div class="topbar">
+      <a href="#" class="logo">Walmart <span>✳</span></a>
+
+      <button class="header-button" type="button">▦ Departments</button>
+      <button class="header-button" type="button">▤ Services</button>
+
+      <form id="search-form" class="search">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search everything at Walmart online and in store"
+          aria-label="Buscar productos"
+        >
+        <button type="submit" aria-label="Buscar">⌕</button>
+      </form>
+
+      <button class="header-button account-button" type="button">
+        ♡ My Items
+      </button>
+
+      <button class="header-button account-button" type="button">
+        ♙ Account
+      </button>
+
+      <button class="header-button" id="open-cart" type="button">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </button>
+    </div>
+
+    <nav class="navigation">
+      <div class="delivery">
+        ◉ How do you want your items?
+        <span>⌖ Sacramento, 95829</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#deals">Deals</a>
+        <a href="#products">Grocery & Essentials</a>
+        <a href="#halloween">Halloween</a>
+        <a href="#products">The Holiday Shop</a>
+        <a href="#products">Toy Shop</a>
+        <a href="#products">Fashion</a>
+        <a href="#products">Home</a>
+        <a href="#products">Electronics</a>
+        <a href="#products">Auto</a>
+        <a href="#products">Registry</a>
+        <a href="#products">Walmart+</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- MOSAICO DE PROMOCIONES -->
+    <section class="promo-grid" id="halloween">
+
+      <article class="promo promo-bag">
+        <div class="promo-text">
+          <h2>Trick. Treat.<br>Repeat.</h2>
+          <a href="#products">Shop now</a>
+        </div>
+        <img
+          src="https://f.fcdn.app/imgs/29ceec/www.zonatecno.com.uy/zoteuy/9252/original/catalogo/109208_109208_1/460x460/notebook-lenovo-ideapad-slim-3-15amn8-ryzen-3-7320-256gb-8gb-notebook-lenovo-ideapad-slim-3-15amn8-ryzen-3-7320-256gb-8gb.jpg"
+          alt="Dulces de Halloween"
+        >
+      </article>
+
+      <article class="promo promo-candy">
+        <div class="promo-text">
+          <h2>Mega candy<br>haul</h2>
+          <a href="#products">Shop now</a>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1603052875302-d376b7c0638a?auto=format&fit=crop&w=700&q=80"
+          alt="Variedad de dulces"
+        >
+      </article>
+
+      <article class="promo promo-halloween">
+        <div class="orange-panel">
+          <span>Costumes & more</span>
+          <h2>Halloween HQ</h2>
+          <a href="#products">Shop all</a>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1601513445506-2ab0d4fb4229?auto=format&fit=crop&w=1000&q=80"
+          alt="Familia con disfraces"
+        >
+      </article>
+
+      <article class="promo promo-wreath">
+        <div class="promo-text">
+          <h2>Fall wreaths &<br>more</h2>
+          <a href="#products">Shop decor</a>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=600&q=80"
+          alt="Decoración otoñal"
+        >
+      </article>
+
+      <article class="promo promo-makeup">
+        <div class="promo-text">
+          <h2>Refresh your makeup<br>routine</h2>
+          <a href="#products">Shop beauty</a>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=80"
+          alt="Productos de maquillaje"
+        >
+      </article>
+
+      <article class="promo promo-party">
+        <div class="promo-text">
+          <h2>Wicked party<br>supplies</h2>
+          <a href="#products">Shop now</a>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80"
+          alt="Productos para fiestas"
+        >
+      </article>
+
+      <article class="promo promo-deals" id="deals">
+        <div class="promo-text">
+          <h2>Up to 65% off</h2>
+          <a href="#products">Shop now</a>
+          <strong>Flash<br>Deals</strong>
+        </div>
+      </article>
+
+      <article class="promo promo-pup">
+        <div class="promo-text">
+          <h2>Treat your pup all<br>fall</h2>
+          <a href="#products">Shop now</a>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=600&q=80"
+          alt="Productos para mascotas"
+        >
+      </article>
+
+    </section>
+
+    <!-- PRODUCTOS DE LA API -->
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Descubrí nuestros productos</p>
+          <h1>Computadoras y tecnología</h1>
+          <p class="subtitle">
+            Explorá laptops, celulares y tablets al mejor precio.
+          </p>
+        </div>
+
+        <div class="sort-container">
+          <label for="sort-select">Ordenar por:</label>
+          <select id="sort-select">
+            <option value="featured">Destacados</option>
+            <option value="price-asc">Precio: menor a mayor</option>
+            <option value="price-desc">Precio: mayor a menor</option>
+            <option value="rating">Mejor calificación</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filters">
+        <button class="chip active" data-filter="all">Todos</button>
+        <button class="chip" data-filter="budget">Menos de $800</button>
+        <button class="chip" data-filter="premium">$800 o más</button>
+      </div>
+
+      <p id="results-status" aria-live="polite">
+        Cargando productos...
+      </p>
+
+      <div class="product-grid" id="product-grid"></div>
+
+      <button id="retry-button" class="retry-button hidden" type="button">
+        Volver a cargar
+      </button>
+    </section>
+  </main>
+
+  <!-- CARRITO -->
+  <div class="backdrop" id="backdrop"></div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Mi carrito</h2>
+      <button id="close-cart" class="close-button" type="button"
+        aria-label="Cerrar carrito">×</button>
+    </div>
+
+    <div id="cart-items" class="cart-items">
+      <p>Tu carrito está vacío.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="subtotal">
+        <span>Subtotal:</span>
+        <strong id="cart-subtotal">$0.00</strong>
+      </div>
+      <button id="checkout-button" type="button">
+        Continuar compra
+      </button>
+      <p>Compra de demostración. No se procesan pagos reales.</p>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer>
+    <a href="#" class="logo footer-logo">Walmart <span>✳</span></a>
+    <p>Proyecto educativo de HTML, CSS y JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
